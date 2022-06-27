@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: rgb(10, 10, 10);
+	background-color: #f1f1f1;
+	
+}
+
+/* Меню */
+
+.navbar {
+	background: rgba(27, 206, 230, 0.514);
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	margin: auto;
+}
+
+.navbar ul li {
+	margin-right: 20px;
+	padding: 10px;
+}
+
+.navbar ul li:hover {
+	margin-right: 20px;
+	background: #000;
+}
+
+.navbar ul li:hover a {
+	color: #eee;
+	text-decoration: none;
+}
+
+/* --- */
+
+.container {min-width: 200px;
+	max-width: 800px;
+	margin: auto;
+}
+
+/*  */
+
+h1 {
+	padding-bottom: 20px;
+}
+
+.info {
+	display: flex;
+	margin-bottom: 40px;
+}
+.info-text {
+	padding: 0 20px 0 50px;
+}
+
+.info img {
+	
+	/*border: 1px solid black;*/
+	border-radius:15px;
+	/*margin-left: 20px;*/
+	margin-top: 20px;
+	margin-left: auto;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info-text p {
+	font-style: italic;
+	font-weight: bold;
+}
+
+strong {
+	color: DarkRed;
+}
+
+.card {
+	/*border: 1px solid black;*/
+	border-radius: 15px;
+	padding: 20px 20px 30px;
+	/*margin: 20px 0;*/
+	margin-bottom: 40px;
+}
+
+.card-info {
+	background: BlanchedAlmond;
+}
+
+.card-social {
+	background: rgba(112, 112, 83, 0.2);
+}
+
+.card-hobby {
+	background: rgba(216, 191, 216, 0.37);
+}
+
+.card-work {
+	background: rgba(30, 128, 30, 0.212);
+}
+
+.card-connect {
+	background: rgba(27, 206, 230, 0.514);
+}
+
+a {
+	color: rgb(2, 16, 219);
+	text-decoration: none;
+	transition: all .5s;
+}
+
+a:hover {
+	color: rgb(255, 0, 0);
+	text-decoration: underline;
+	opacity: .8;
+}
+
+h2 {
+	margin-bottom: 30px;
+}
+
+/* Таблица - Опыт работы */
+
+.table-block {
+	border: 1px solid black;
+	border-radius: 10px 10px 0 0;
+}
+
+.table-block table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+th {
+	border-right: 1px solid black;
+	padding: 10px 0;
+}
+
+th:last-child {
+	border-right: 0;
+}
+
+.table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.table td {
+	padding: 10px 10px;
+}
+
+.table tr:first-child td {
+	padding-top: 20px;
+}
+
+td:last-child {
+	text-align: center;
+}
+
+.table tr:nth-child(even) {
+	background: rgba(44, 129, 44, 0.185);
+}
+
+/* Форма */
+
+.form h2 {
+	text-align: center;
+}
+
+.form-row {
+	margin-bottom: 30px;
+	display: flex;
+}
+.form-row .form-group {
+	margin-right: 20px;
+	width: 50%;
+}
+
+.form-row .form-group:last-child {
+	margin-right: 0;
+}
+
+.form-group label {
+	display: block;
+	color: #111;
+	font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid #111;
+	color: #000;
+	padding: 10px 0 10px;
+	outline: none;
+	font-family: inherit;
+	font-size: 18px;
+}
+
+.btn {
+	background: #ffff00d3;
+	color: #000;
+	cursor: pointer;
+	padding: 15px 60px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	transition: all .5s;
+}
+
+.btn-center {
+	text-align: center;
+}
+
+.btn:hover {
+	color: #eee;
+	background: #000;
+	opacity: .8;
+}
+
+/* Media */
+
+@media (max-width: 650px) {
+	.info {
+		display: block;
+	}
+	.info-center {
+		text-align: center;
+	}
+	.info-text {
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 560px) {
+	.navbar {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		font-size: 0.8rem;
+	}
+	.form-row {
+		display: block;
+	}
+	.form-row .form-group {
+		margin-right: 0px;
+		width: 100%;
+	}
+	.form-row .form-group:last-child {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 400px) {
+	th {
+		font-size: 0.8rem;
+	}
+	td {
+		font-size: 0.6rem;
+	}
+}
+
+@media (max-width: 330px) {
+	th {
+		font-size: 0.7rem;
+	}
+	td {
+		font-size: 0.5rem;
+	}
+}
